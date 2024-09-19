@@ -1,14 +1,18 @@
+name: Maven CI/CD
+  
+  
+  
 on:
-
   push:
-
     branches: [ Development ]
 
 jobs:
-
   test_and_build:
+
     runs-on: ubuntu-latest
+
     steps:
+      
       - name: Hacemos Checkuot del repo de Git
         uses: actions/checkout@v2
 
